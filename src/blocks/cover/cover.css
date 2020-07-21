@@ -1,0 +1,9 @@
+@import url(./__line/cover__line.css);
+.cover {
+    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 576px;
+}
