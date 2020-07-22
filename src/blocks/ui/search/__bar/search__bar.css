@@ -1,0 +1,7 @@
+.search__bar {
+    border-radius: 100px;
+    height: 64px;
+    width: 100%;
+    display: block;
+    border: 1px solid #D1D2D6;
+}

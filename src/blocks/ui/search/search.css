@@ -1,0 +1,6 @@
+@import url(./__bar/search__bar.css);
+@import url(./__btn/search__btn.css);
+.search {
+    position: relative;
+    width: 45%;
+}
