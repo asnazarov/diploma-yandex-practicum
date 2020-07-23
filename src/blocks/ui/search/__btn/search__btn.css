@@ -11,9 +11,18 @@
     padding: 0 54px;
     border-radius: 100px;
     border: none;
+    color: #fff;
 }
 
 .search__btn:hover {
     background: #347EFF;
     cursor: pointer;
+}
+
+.search__btn:focus {
+    outline: none;
+}
+
+.search__btn:active {
+    background: #2A65CC;
 }

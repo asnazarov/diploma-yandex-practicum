@@ -1,8 +1,24 @@
-/* @import url(./__line/cover__line.css); */
-
+@import url(./__title/cover__title.css);
+@import url(./__text/cover__text.css);
 .cover {
-    max-width: 1440px;
-    position: absolute;
+    border: 1px solid green;
+    max-width: 610px;
+    position: relative;
+    margin: 0 auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* .cover { */
+
+
+/* max-width: 610px; */
+
+
+/* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,5 +27,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
-}
+    width: 100%; */
+
+
+/* } */
