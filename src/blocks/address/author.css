@@ -1,0 +1,7 @@
+@import url(./__foto/author__foto.css);
+@import url(./__items/author__items.css);
+.author {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}

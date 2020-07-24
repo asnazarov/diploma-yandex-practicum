@@ -1,0 +1,7 @@
+.author__foto {
+    width: 464px;
+    height: 464px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 80px 57px 80px 100px;
+}
