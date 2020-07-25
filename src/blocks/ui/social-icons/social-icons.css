@@ -1,0 +1,6 @@
+@import url(./social-icon/social-icon.css);
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
