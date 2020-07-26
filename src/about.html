@@ -10,14 +10,66 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="#">NewsAnalyzer</a>
+        <a class="logo logo_theme_dark" href="./index.html">NewsAnalyzer</a>
         <nav>
             <ul class="menu">
-                <li><a class="menu__link menu__link_theme_light" href="">Главная</a></li>
-                <li><a class="menu__link menu__link_theme_light" href="./about.html">О проекте</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="./index.html">Главная</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="./about.html">О проекте</a></li>
             </ul>
         </nav>
     </header>
+    <hr class="root__line" />
+    <section class="about">
+        <h2 class="about__title">Клиентам</h2>
+        <p class="about__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+        <p class="about__text">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+        <p class="about__text">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+        <p class="about__text">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых
+            операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.
+        </p>
+        <p class="about__text">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+    </section>
+    <section class="technology">
+        <div class="technology__container">
+            <h2 class="technology__title">Используемые технологии</h2>
+            <div class="technology__images">
+                <img src="<%=require('./images/html.png')%>" alt="">
+                <img src="<%=require('./images/css.png')%>" alt="">
+                <img src="<%=require('./images/js.png')%>" alt="">
+                <img src="<%=require('./images/webpack.png')%>" alt="">
+            </div>
+        </div>
+    </section>
+    <address class="author">
+        <img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
+        <div class="author__items">
+            <h2 class="author__title">Об авторе</h2>
+            <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+                занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
+                чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </address>
+    <footer class="footer">
+        <p class="footer__copyright">© 2019 Supersite</p>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu__link menu__link_theme_dark" href="">Главная</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="">О проекте</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="">Яндекс.Практикум</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="social-icons">
+                <li>
+                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/"><img src="<%=require('./images/github.svg')%>" alt="Github"></a>
+                </li>
+                <li>
+                    <a class="social-icon social-icon_facebook" title="Facebook" href="https://facebook.com/"><img src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
