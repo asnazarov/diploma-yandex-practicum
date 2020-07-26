@@ -2,7 +2,7 @@
 @import url(./__title/notFound__title.css);
 @import url(./__text/notFound__text.css);
 .notFound {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-height: 374px;
     margin: 0 auto;
     background: #F5F6F7;
