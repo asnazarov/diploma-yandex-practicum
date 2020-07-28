@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search news</title>
-    <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%">
+    <!-- <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%"> -->
+    <!-- <link rel="shortcut icon" href="images/favicon.svg" type="image/svg"> -->
+    <link rel="shortcut icon" href="<%= require('./images/favicon.svg').default %>" type="image/x-icon">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <title>Search news</title>
 </head>
 
 <body>
     <div class="root">
         <header class="header">
-            <a class="logo logo_theme_light" href="#">NewsAnalyzer</a>
+            <a class="logo logo_theme_light" href="/">NewsAnalyzer</a>
             <nav>
                 <ul class="menu">
-                    <li><a class="menu__link menu__link_theme_light" href="./index.html">Главная</a></li>
-                    <li><a class="menu__link menu__link_theme_light" href="./about.html">О проекте</a></li>
+                    <li><a class="menu__link menu__link_theme_light menu__active-theme-light" href="/">Главная</a></li>
+                    <li><a class="menu__link menu__link_theme_light menu__active-theme-gray" href="./about.html">О проекте</a></li>
                 </ul>
             </nav>
         </header>
