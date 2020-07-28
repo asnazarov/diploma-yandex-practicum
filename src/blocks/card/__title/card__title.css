@@ -1,0 +1,8 @@
+.card__title {
+    font-family: 'Robotoslab', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 32px;
+    color: #1A1B22;
+    margin: 12px 18px 10px 18px;
+}

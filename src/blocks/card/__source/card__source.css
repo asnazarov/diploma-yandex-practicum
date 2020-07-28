@@ -1,0 +1,10 @@
+.card__source {
+    color: #B6BCBF;
+    font-family: 'Robotoslab';
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 12px 18px 16px 18px;
+}

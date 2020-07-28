@@ -1,0 +1,12 @@
+.result__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1020px) {
+    .result__container {
+        padding: 0 40px;
+    }
+}

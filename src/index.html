@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesto</title>
+    <title>Search news</title>
+    <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
@@ -38,16 +39,47 @@
         <img class="preloader__img" src="<%=require('./images/weiting.png')%>" alt="">
         <p class="preloader__text">Идет поиск новостей...</p>
     </div>
-    <address class="author">
-        <img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
-        <div class="author__items">
-            <h2 class="author__title">Об авторе</h2>
-            <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-                занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-                чем можете помочь потенциальным заказчикам.</p>
+    <section class="result">
+        <div class="result__container">
+            <h2 class="result__title">Результаты поиска</h2>
+            <a class="result__analytics" href="">Посмотреть аналитику</a>
+            <div class="cards-news">
+                <div class="card">
+                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="">
+                    <p class="card__date">19 августа, 2019</p>
+                    <h2 class="card__title">Национальное достояние – парки</h2>
+                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    <p class="card__source">Лента.ру</p>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="<%=require('./images/cards/image_04.jpg')%>" alt="">
+                    <p class="card__date">19 августа, 2019</p>
+                    <h2 class="card__title">Лесные огоньки: история одной фотографии</h2>
+                    <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы. Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                        ускользающую красоту одного из местных чудес природы.</p>
+                    <p class="card__source">Лента.ру</p>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="">
+                    <p class="card__date">19 августа, 2019</p>
+                    <h2 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    <p class="card__source">Лента.ру</p>
+                </div>
+
+            </div>
         </div>
-    </address>
+    </section>
+    <address class="author">
+		<img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
+		<div class="author__items">
+			<h2 class="author__title">Об авторе</h2>
+			<p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+				занимаетесь, какими технологиями разработки владеете.</p>
+			<p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
+				чем можете помочь потенциальным заказчикам.</p>
+		</div>
+	</address>
     <footer class="footer">
         <p class="footer__copyright">© 2019 Supersite</p>
         <nav>
@@ -60,10 +92,12 @@
         <nav>
             <ul class="social-icons">
                 <li>
-                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/"><img src="<%=require('./images/github.svg')%>" alt="Github"></a>
+                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/"><img
+							src="<%=require('./images/github.svg')%>" alt="Github"></a>
                 </li>
                 <li>
-                    <a class="social-icon social-icon_facebook" title="Facebook" href="https://facebook.com/"><img src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
+                    <a class="social-icon social-icon_facebook" title="Facebook" href="https://facebook.com/"><img
+							src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
                 </li>
             </ul>
         </nav>

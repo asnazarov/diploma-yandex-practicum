@@ -1,0 +1,10 @@
+@import url(./__img/card__img.css);
+@import url(./__date/card__date.css);
+@import url(./__title/card__title.css);
+@import url(./__text/card__text.css);
+@import url(./__source/card__source.css);
+.card {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+}
