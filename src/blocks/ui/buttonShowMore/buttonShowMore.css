@@ -1,0 +1,21 @@
+.btnShowMore {
+    margin: 64px auto 0 auto;
+    padding: 18px 84px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    border: none;
+}
+
+.btnShowMore:hover {
+    cursor: pointer;
+    background: #e0e0e0;
+}
+
+.btnShowMore:focus {
+    outline: none;
+}

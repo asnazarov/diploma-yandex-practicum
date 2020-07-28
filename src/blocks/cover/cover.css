@@ -1,7 +1,6 @@
 @import url(./__title/cover__title.css);
 @import url(./__text/cover__text.css);
 .cover {
-    border: 1px solid green;
     max-width: 610px;
     position: relative;
     margin: 0 auto;
