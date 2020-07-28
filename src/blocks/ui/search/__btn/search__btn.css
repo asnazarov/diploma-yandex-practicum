@@ -22,6 +22,7 @@
 
 .search__btn:focus {
     outline: none;
+    border: 1.6px solid tomato;
 }
 
 .search__btn:active {

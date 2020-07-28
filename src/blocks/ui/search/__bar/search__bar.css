@@ -4,10 +4,17 @@
     width: 99%;
     display: block;
     border: 1px solid #D1D2D6;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .search__bar:focus {
-    outline: none
+    outline: none;
+    border: 1.5px solid tomato;
 }
 
 
@@ -18,7 +25,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }
 
 
@@ -29,7 +35,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }
 
 
@@ -40,7 +45,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }
 
 
@@ -51,7 +55,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }
 
 
@@ -62,7 +65,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }
 
 
@@ -73,5 +75,4 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px;
 }

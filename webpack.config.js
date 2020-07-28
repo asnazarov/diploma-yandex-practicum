@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-        index: './src/js/index.js',
+        main: './src/js/index.js',
         about: './src/js/about.js'
     },
     output: {
@@ -61,7 +61,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             template: './src/index.html',
-            chunks: ['index'],
+            chunks: ['main'],
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({

@@ -18,4 +18,5 @@
 
 .btnShowMore:focus {
     outline: none;
+    border: 1.5px solid tomato;
 }
