@@ -9,7 +9,9 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     entry: {
         main: './src/js/index.js',
-        about: './src/js/about.js'
+        about: './src/js/about.js',
+        analytics: './src/js/analytics.js'
+
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -33,12 +35,16 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|svg|gif)$/i,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        esModule: false,
+                use: [
+                    'file-loader?name=./images/[contenthash].[ext]',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            outputPath: 'images',
+                            esModule: false,
+                        },
                     },
-                }, ],
+                ],
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
@@ -70,20 +76,12 @@ module.exports = {
             chunks: ['about'],
             filename: 'about.html'
         }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/index.html',
-        //     inject: false,
-        //     hash: true,
-        //     chunks: ['index'],
-        //     filename: 'index.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/about.html',
-        //     inject: false,
-        //     hash: true,
-        //     chunks: ['about'],
-        //     filename: 'about.html'
-        // }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/analytics.html',
+            chunks: ['analytics'],
+            filename: 'analytics.html'
+        }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
