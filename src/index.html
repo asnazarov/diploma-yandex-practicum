@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%">
     <!-- <link rel="shortcut icon" href="images/favicon.svg" type="image/svg"> -->
-    <!-- <link rel="shortcut icon" href="<%= require('./images/favicon.svg').default %>" type="image/x-icon"> -->
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <link rel="shortcut icon" href="<%= require('./images/favicon.svg').default %>" type="image/svg">
+    <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"> -->
     <title>Search news</title>
 </head>
 
@@ -18,11 +18,11 @@
             <nav>
                 <ul class="menu">
                     <li><a class="menu__link menu__link_theme_light menu__active-theme-light" href="./index.html">Главная</a></li>
-                    <li><a class="menu__link menu__link_theme_light menu__active-theme-gray" href="./about.html">О проекте</a></li>
+                    <li><a class="menu__link menu__link_theme_light " href="./about.html">О проекте</a></li>
                 </ul>
             </nav>
         </header>
-        <hr class="root__line" />
+        <hr class="halve-line" />
         <section class="cover">
             <h1 class="cover__title">Что в мире творится?</h1>
             <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
@@ -33,7 +33,7 @@
         </section>
     </div>
     <div class="notFound">
-        <img class="notFound__icon" src="<%=require('./images/not-found_v1.svg')%>" alt="Фото автора">
+        <img class="notFound__icon" src="<%=require('./images/not-found_v1.svg')%>" alt="Не найдено">
         <h2 class="notFound__title">Ничего не найдено</h2>
         <p class="notFound__text">К сожалению по вашему запросу ничего не найдено.</p>
     </div>

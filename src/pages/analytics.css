@@ -1,3 +1,6 @@
+@import url(../blocks/ui/logo/logo.css);
+@import url(../blocks/ui/menu/menu.css);
+@import url(../blocks/ui/halve-line/halve-line.css);
 @import url(../blocks/header/header.css);
 .titleh1 {
     color: seagreen;
