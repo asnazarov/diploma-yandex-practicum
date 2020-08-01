@@ -10,8 +10,3 @@
     margin-left: 34px;
     padding-bottom: 27px;
 }
-
-.menu__link:focus {
-    outline: none;
-    border: 1.5px solid tomato;
-}

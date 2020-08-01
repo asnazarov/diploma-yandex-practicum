@@ -8,7 +8,7 @@
     line-height: 24px;
     background: #FFFFFF;
     border-radius: 80px;
-    border: none;
+    border: 1.5px solid transparent;
 }
 
 .btnShowMore:hover {
@@ -18,5 +18,5 @@
 
 .btnShowMore:focus {
     outline: none;
-    border: 1.5px solid tomato;
+    border: 1.5px solid #ccc;
 }

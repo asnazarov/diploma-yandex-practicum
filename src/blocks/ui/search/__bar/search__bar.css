@@ -14,7 +14,7 @@
 
 .search__bar:focus {
     outline: none;
-    border: 1.5px solid tomato;
+    border: 1.5px solid #403f3f;
 }
 
 

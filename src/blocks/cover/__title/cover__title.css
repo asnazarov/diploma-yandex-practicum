@@ -1,10 +1,10 @@
 .cover__title {
     font-family: 'Robotoslab', sans-serif;
-    margin-top: 80px;
     color: #fff;
     font-weight: normal;
     font-size: 60px;
     line-height: 64px;
     margin: 0;
+    margin-top: 0px;
     max-width: 500px;
 }
