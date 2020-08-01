@@ -1,9 +1,9 @@
-.about__title {
-    max-width: 712px;
-    color: #1A1B22;
+.content-title {
     font-family: 'Robotoslab', sans-serif;
+    color: #1A1B22;
+    font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 46px;
-    margin-top: 80px;
+    max-width: 410px;
 }
