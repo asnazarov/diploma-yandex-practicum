@@ -1,0 +1,9 @@
+@import url(./__search/statistics__search.css);
+@import url(./__title/statistics__title.css);
+@import url(./__text/statistics__text.css);
+.statistics {
+    max-width: 1440px;
+    margin: 80px auto;
+    padding: 0 105px;
+    box-sizing: border-box;
+}
