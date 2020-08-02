@@ -1,0 +1,19 @@
+.tabel__rectange {
+    height: 24px;
+    width: 30%;
+    margin: 0 0 56px 0;
+    background-color: #2F71E5;
+    padding-left: 6px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    color: #fff;
+}
+
+.tabel__rectange:last-child {
+    margin: 0 0 16px 0;
+}

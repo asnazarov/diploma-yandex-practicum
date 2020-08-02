@@ -1,0 +1,7 @@
+.tabel__scale {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 16px 0 8px 0;
+}

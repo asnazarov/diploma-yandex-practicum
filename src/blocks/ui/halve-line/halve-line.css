@@ -1,4 +1,7 @@
+@import url(./_theme_light/halve-line_theme_light.css);
+@import url(./_theme_dark/halve-line_theme_dark.css);
 .halve-line {
-    border-bottom: transparent;
+    border: transparent;
     margin: 0;
+    height: 1px;
 }

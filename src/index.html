@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%">
+    <!-- <link rel="shortcut icon" href="%=require('./images/favicon.svg').default%"> -->
     <!-- <link rel="shortcut icon" href="images/favicon.svg" type="image/svg"> -->
     <link rel="shortcut icon" href="<%= require('./images/favicon.svg').default %>" type="image/svg">
     <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"> -->
     <title>Search news</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 </ul>
             </nav>
         </header>
-        <hr class="halve-line" />
+        <hr class="halve-line halve-line_theme_light" />
         <section class="cover">
             <h1 class="cover__title">Что в мире творится?</h1>
             <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
@@ -91,18 +92,18 @@
 		</div>
 	</address>
     <footer class="footer">
-        <p class="footer__copyright">&copy; 2020 Supersite</p>
+        <p class="footer__copyright">&copy; 2020 Alexander Nazarov</p>
         <nav>
             <ul class="menu">
-                <li><a class="menu__link menu__link_theme_dark" href="">Главная</a></li>
-                <li><a class="menu__link menu__link_theme_dark" href="">О проекте</a></li>
-                <li><a class="menu__link menu__link_theme_dark" href="">Яндекс.Практикум</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="./index.html">Главная</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="./about.html">О проекте</a></li>
+                <li><a class="menu__link menu__link_theme_dark" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
             </ul>
         </nav>
         <nav>
             <ul class="social-icons">
                 <li>
-                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/"><img
+                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/asnazarov/"><img
 							src="<%=require('./images/github.svg')%>" alt="Github"></a>
                 </li>
                 <li>
