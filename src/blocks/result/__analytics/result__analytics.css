@@ -9,3 +9,7 @@
     color: #000;
     text-decoration: none;
 }
+
+.result__analytics::after {
+    content: url(../../../images/arrow.svg);
+}
