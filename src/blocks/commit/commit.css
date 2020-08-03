@@ -1,0 +1,17 @@
+@import url(./__card/commit__card.css);
+@import url(./__cards/commit__cards.css);
+@import url(./__date/commit__date.css);
+@import url(./__head-item/commit__head-item.css);
+@import url(./__head/commit__head.css);
+@import url(./__image/commit__image.css);
+@import url(./__mail/commit__mail.css);
+@import url(./__text/commit__text.css);
+@import url(./__title/commit__title.css);
+.commit {
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    /* padding: 0 105px; */
+    box-sizing: border-box;
+    background-color: #F5F6F7;
+    position: relative;
+}

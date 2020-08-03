@@ -1,0 +1,14 @@
+.commit__card {
+    cursor: grab;
+    text-decoration: none;
+    background: #fff;
+    display: block;
+    border-radius: 16px;
+    width: 400px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.commit__card:active {
+    cursor: grabbing;
+}

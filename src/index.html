@@ -44,8 +44,10 @@
     </div>
     <section class="result">
         <div class="result__container">
-            <h2 class="content-title">Результаты поиска</h2>
-            <a class="result__analytics" href="./analytics.html">Посмотреть аналитику </a>
+            <div class="content-nav">
+                <h2 class="content-title">Результаты поиска</h2>
+                <a class="content-nav__link" href="./analytics.html">Посмотреть аналитику </a>
+            </div>
             <div class="cards-news">
                 <div class="card">
                     <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="">
@@ -82,15 +84,15 @@
         </div>
     </section>
     <address class="author">
-		<img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
-		<div class="author__items">
-			<h2 class="content-title">Об авторе</h2>
-			<p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-				занимаетесь, какими технологиями разработки владеете.</p>
-			<p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-				чем можете помочь потенциальным заказчикам.</p>
-		</div>
-	</address>
+        <img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
+        <div class="author__items">
+            <h2 class="content-title">Об авторе</h2>
+            <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+                занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
+                чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </address>
     <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Alexander Nazarov</p>
         <nav>
@@ -104,11 +106,11 @@
             <ul class="social-icons">
                 <li>
                     <a class="social-icon social-icon_github" title="Github" href="https://github.com/asnazarov/"><img
-							src="<%=require('./images/github.svg')%>" alt="Github"></a>
+                            src="<%=require('./images/github.svg')%>" alt="Github"></a>
                 </li>
                 <li>
                     <a class="social-icon social-icon_facebook" title="Facebook" href="https://facebook.com/"><img
-							src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
+                            src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
                 </li>
             </ul>
         </nav>
