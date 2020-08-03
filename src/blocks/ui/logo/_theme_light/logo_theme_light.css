@@ -1,3 +1,13 @@
 .logo_theme_light {
     color: #fff;
 }
+
+.logo_theme_light:hover {
+    color: #B6BCBF;
+    transition: .3s;
+}
+
+.logo_theme_light:not(:hover) {
+    color: #fff;
+    transition: .4s;
+}

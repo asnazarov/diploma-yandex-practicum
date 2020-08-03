@@ -19,7 +19,8 @@
             <nav>
                 <ul class="menu">
                     <li><a class="menu__link menu__link_theme_light menu__active-theme-light" href="./index.html">Главная</a></li>
-                    <li><a class="menu__link menu__link_theme_light " href="./about.html">О проекте</a></li>
+                    <li><a class="menu__link menu__link_theme_gray menu__hover-theme-light" href="./about.html">О
+                            проекте</a></li>
                 </ul>
             </nav>
         </header>
@@ -87,30 +88,46 @@
         <img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
         <div class="author__items">
             <h2 class="content-title">Об авторе</h2>
-            <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-                занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-                чем можете помочь потенциальным заказчикам.</p>
+            <p class="author__text">Меня зовут Александр Назаров. Я начинающий Frontend-разработчик. Владею на хорошем
+                уровне технологиями разработки: JavaScript ES6, ООП, HTML5, БЭМ, Grid, CSS, SCSS, Git, API, Webpack, Gulp,
+                адаптивная и кроссбраузерная верстка с валидным кодом. В настоящее время изучаю
+                Vue.js и буду развиваться в этом направлении.</p>
+            <p class="author__text">Данный проект является дипломной работой по окончании обучения курса <span><a
+                        class="navigation" href="https://praktikum.yandex.ru/web">Яндекс.Практикума</a></span> и был
+                написан в августе 2020 г. В результате обучения было выполнено три учебных (<span><a class="navigation"
+                        href="https://hakim.se/404">временно не работает</a></span>, <span><a class="navigation"
+                        href="https://github.com/asnazarov/-ard-editor">github.com/сard-editor</a></span>, <span><a
+                        class="navigation"
+                        href="https://github.com/asnazarov/travel-rus.site">github.com/travel-rus</a></span>) и один
+                дипломный проект (<span><a class="navigation"
+                        href="https://github.com/asnazarov/diploma-yandex-practicum">github.com/diploma</a></span>). Все
+                работы были проверены опытными ревьюерами.</p>
+            <p class="author__text">Рассмотрю предложения о сотрудничестве (<span><a class="navigation"
+                        href="https://t.me/asn_nazarov">telegram</a></a></span>, <span><a class="navigation"
+                        href="mailto:asn.nazarov.asn@gmail.com?subject=Сотрудничество&body=Добрый день!...%0A%0A%0A%0A%0AНомер%20для%20связи:%20">e-mail</a></span>),
+                могу быть полезен любой команде, люблю решать сложные задачи и имею большое желание повышать
+                профессиональный уровень.</p>
         </div>
     </address>
     <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Alexander Nazarov</p>
         <nav>
             <ul class="menu">
-                <li><a class="menu__link menu__link_theme_dark" href="./index.html">Главная</a></li>
-                <li><a class="menu__link menu__link_theme_dark" href="./about.html">О проекте</a></li>
-                <li><a class="menu__link menu__link_theme_dark" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
+                <li><a class="menu__link menu__link_theme_dark menu__hover-theme-gray" href="./index.html">Главная</a>
+                </li>
+                <li><a class="menu__link menu__link_theme_dark menu__hover-theme-gray" href="./about.html">О проекте</a>
+                </li>
+                <li><a class="menu__link menu__link_theme_dark menu__hover-theme-gray" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
             </ul>
         </nav>
         <nav>
             <ul class="social-icons">
                 <li>
-                    <a class="social-icon social-icon_github" title="Github" href="https://github.com/asnazarov/"><img
-                            src="<%=require('./images/github.svg')%>" alt="Github"></a>
+                    <a class="social-icon social-icon_github" target="_blank" title="Github" href="https://github.com/asnazarov/"><img src="<%=require('./images/github.svg')%>"
+                            alt="Github"></a>
                 </li>
                 <li>
-                    <a class="social-icon social-icon_facebook" title="Facebook" href="https://facebook.com/"><img
-                            src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
+                    <a class="social-icon social-icon_facebook" target="_blank" title="Facebook" href="https://facebook.com/"><img src="<%=require('./images/fb.svg')%>" alt="Facebook"></a>
                 </li>
             </ul>
         </nav>

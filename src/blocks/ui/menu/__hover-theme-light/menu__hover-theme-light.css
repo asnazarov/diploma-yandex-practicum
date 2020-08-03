@@ -1,0 +1,9 @@
+.menu__hover-theme-light:hover {
+    color: #fff;
+    transition: .3s;
+}
+
+.menu__hover-theme-light:not(:hover) {
+    color: #B6BCBF;
+    transition: .4s;
+}

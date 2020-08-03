@@ -7,6 +7,14 @@
     text-decoration: none;
 }
 
+.content-nav__link:hover {
+    color: #B6BCBF;
+}
+
 .content-nav__link::after {
     content: url(../../../../images/arrow.svg);
+}
+
+.content-nav__link:hover::after {
+    content: url(../../../../images/arrow-gray.svg);
 }
