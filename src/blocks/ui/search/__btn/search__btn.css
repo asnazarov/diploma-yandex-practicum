@@ -28,3 +28,11 @@
 .search__btn:active {
     background: #2A65CC;
 }
+
+@media screen and (max-width: 500px) {
+    .search__btn {
+        position: inherit;
+        height: 54px;
+        width: 100%;
+    }
+}

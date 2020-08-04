@@ -1,4 +1,5 @@
 .btnShowMore {
+    max-width: 450px;
     margin: 64px auto 0 auto;
     padding: 18px 84px;
     display: block;
@@ -24,5 +25,13 @@
 @media screen and (max-width: 1020px) {
     .btnShowMore {
         margin-top: 28px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btnShowMore {
+        padding: 14px 10px;
+        width: 100%;
+        margin-top: 14px;
     }
 }

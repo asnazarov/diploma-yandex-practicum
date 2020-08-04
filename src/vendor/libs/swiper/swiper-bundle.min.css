@@ -247,6 +247,12 @@
     width: 100%
 }
 
+@media screen and (max-width: 370px) {
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: 30px;
+    }
+}
+
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0

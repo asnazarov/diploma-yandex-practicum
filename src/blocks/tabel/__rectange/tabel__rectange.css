@@ -1,11 +1,11 @@
 .tabel__rectange {
     height: 24px;
-    width: 30%;
+    width: 47%;
     margin: 0 0 56px 0;
     background-color: #2F71E5;
     padding-left: 6px;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -16,4 +16,10 @@
 
 .tabel__rectange:last-child {
     margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 500px) {
+    .tabel__rectange {
+        margin: 12px 0 24px 0;
+    }
 }

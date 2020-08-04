@@ -7,3 +7,10 @@
     margin: 0;
     margin-top: -45px;
 }
+
+@media screen and (max-width: 500px) {
+    .cover__text {
+        margin-top: 0;
+        margin-bottom: 90px;
+    }
+}

@@ -24,6 +24,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .search__bar {
+        margin-bottom: 20px;
+    }
+}
+
 
 /* WebKit, Edge */
 

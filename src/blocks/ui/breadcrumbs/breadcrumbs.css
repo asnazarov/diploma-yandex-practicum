@@ -21,3 +21,16 @@
 .breadcrumbs>li:last-child:after {
     content: '';
 }
+
+@media screen and (max-width: 1020px) {
+    .breadcrumbs {
+        margin: 33px auto 50px auto;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .breadcrumbs {
+        display: none;
+    }
+}

@@ -4,3 +4,11 @@
     height: 64px;
     margin-top: 18px;
 }
+
+@media screen and (max-width: 1023px) {
+    .commit__image {
+        width: 42px;
+        height: 42px;
+        margin-top: 0;
+    }
+}

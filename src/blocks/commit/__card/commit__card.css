@@ -12,3 +12,17 @@
 .commit__card:active {
     cursor: grabbing;
 }
+
+@media screen and (max-width: 1023px) {
+    .commit__card {
+        width: 336px;
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .commit__card {
+        width: 288px;
+        padding: 16px;
+    }
+}

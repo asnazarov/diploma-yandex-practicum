@@ -15,5 +15,14 @@
         line-height: 40px;
         max-width: 385px;
         margin-bottom: 50px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cover__title {
+        margin-bottom: 20px;
+        margin-top: 30px;
     }
 }

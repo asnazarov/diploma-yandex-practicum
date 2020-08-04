@@ -21,3 +21,11 @@
         margin: 60px 35px 60px 39px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .author__foto {
+        width: 272px;
+        height: 272px;
+        margin: 45px auto 15px auto;
+    }
+}

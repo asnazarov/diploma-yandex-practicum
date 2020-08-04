@@ -14,5 +14,7 @@
     .content-title {
         font-size: 30px;
         line-height: 34px;
+        /* max-width: 460px; */
+        max-width: 415px;
     }
 }

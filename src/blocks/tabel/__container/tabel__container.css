@@ -4,3 +4,15 @@
     padding: 63px 105px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1020px) {
+    .tabel__container {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tabel__container {
+        padding: 24px 16px;
+    }
+}

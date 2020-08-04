@@ -38,3 +38,9 @@
         gap: 8px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .cards-news {
+        margin-top: 36px;
+    }
+}

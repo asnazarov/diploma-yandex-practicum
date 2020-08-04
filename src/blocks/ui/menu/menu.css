@@ -9,7 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-left: -34px;
 }
 
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin-left: -30px;
+    }
+}

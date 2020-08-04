@@ -7,3 +7,9 @@
     font-size: 18px;
     line-height: 27px;
 }
+
+@media screen and (max-width: 390px) {
+    .about__text {
+        line-height: 25px;
+    }
+}
