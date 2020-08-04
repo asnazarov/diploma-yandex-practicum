@@ -2,9 +2,8 @@
 .technology__container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 105px;
+    padding: 90px;
     box-sizing: border-box;
-    min-height: 334px;
     display: flex;
     justify-content: space-between;
     align-items: center;

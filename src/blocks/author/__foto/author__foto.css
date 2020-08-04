@@ -5,3 +5,19 @@
     border-radius: 50%;
     margin: 80px 57px 80px 100px;
 }
+
+@media screen and (max-width: 1200px) {
+    .author__foto {
+        width: 300px;
+        height: 300px;
+        margin: 60px 35px 60px 80px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .author__foto {
+        width: 232px;
+        height: 232px;
+        margin: 60px 35px 60px 39px;
+    }
+}

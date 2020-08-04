@@ -20,3 +20,9 @@
     outline: none;
     border: 1.5px solid #ccc;
 }
+
+@media screen and (max-width: 1020px) {
+    .btnShowMore {
+        margin-top: 28px;
+    }
+}

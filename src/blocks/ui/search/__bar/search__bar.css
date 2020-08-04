@@ -17,6 +17,13 @@
     border: 1.5px solid #403f3f;
 }
 
+@media screen and (max-width: 1020px) {
+    .search__bar {
+        height: 56px;
+        ;
+    }
+}
+
 
 /* WebKit, Edge */
 

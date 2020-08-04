@@ -6,3 +6,35 @@
     justify-content: center;
     margin-top: 60px;
 }
+
+@media screen and (max-width: 1372px) {
+    .cards-news {
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cards-news {
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cards-news {
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cards-news {
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 8px;
+    }
+}

@@ -10,6 +10,13 @@
     justify-content: space-evenly;
 }
 
+@media screen and (max-width: 1023px) {
+    .cover {
+        max-width: 445px;
+        min-height: 320px;
+    }
+}
+
 
 /* .cover { */
 

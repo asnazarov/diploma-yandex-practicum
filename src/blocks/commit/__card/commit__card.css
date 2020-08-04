@@ -5,7 +5,7 @@
     display: block;
     border-radius: 16px;
     width: 400px;
-    padding: 24px;
+    padding: 24px 24px 65px 24px;
     box-sizing: border-box;
 }
 

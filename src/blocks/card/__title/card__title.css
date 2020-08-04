@@ -6,3 +6,10 @@
     color: #1A1B22;
     margin: 12px 18px 10px 18px;
 }
+
+@media screen and (max-width: 1020px) {
+    .card__title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}

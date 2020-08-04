@@ -23,18 +23,27 @@
     right: 0;
 }
 
+.swiper-button-next {
+    background: url(../../images/slider-control.svg);
+}
+
+.swiper-button-prev {
+    background: url(../../images/slider-control1.svg);
+}
+
 .swiper-button-next,
 .swiper-button-prev {
-    background: url(../../images/slider-control.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 50%;
+    top: 48%;
     margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
     z-index: 10;
+    padding-top: 60px;
+    box-sizing: border-box;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -44,20 +53,20 @@
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-    /* opacity: .35;
+    opacity: .35;
     cursor: auto;
-    pointer-events: none */
+    pointer-events: none
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    /* font-family: swiper-icons;
+    font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none!important;
     letter-spacing: 0;
     text-transform: none;
     font-variant: initial;
-    line-height: 1 */
+    line-height: 1
 }
 
 .swiper-slide {

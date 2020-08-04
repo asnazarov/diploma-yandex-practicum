@@ -7,6 +7,12 @@
     min-height: 576px;
 }
 
+@media screen and (max-width: 1023px) {
+    .root {
+        min-height: 400px;
+    }
+}
+
 
 /* @import url(./__section/root__section.css);
 .root {

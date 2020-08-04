@@ -7,4 +7,12 @@
     font-size: 40px;
     line-height: 46px;
     max-width: 715px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .content-title {
+        font-size: 30px;
+        line-height: 34px;
+    }
 }

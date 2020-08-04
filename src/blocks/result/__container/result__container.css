@@ -6,8 +6,14 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 1400px) {
+    .result__container {
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     .result__container {
-        padding: 0 40px;
+        padding: 0;
     }
 }
