@@ -1,6 +1,7 @@
 # diploma-yandex-practicum
 ## v0.0.3
 ---
+https://asnazarov.github.io/diploma-yandex-practicum/
 
 ### О проекте
 Дипломный проект [Яндекс.Практикума](https://praktikum.yandex.ru/web). Cервис для анализа происходящих в мире событий. Его задача — установить, насколько популярны новости на определённую тему.
