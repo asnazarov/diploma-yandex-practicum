@@ -1,0 +1,22 @@
+@import url(./__search/statistics__search.css);
+@import url(./__text/statistics__text.css);
+.statistics {
+    max-width: 1440px;
+    margin: 80px auto;
+    padding: 0 105px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1020px) {
+    .statistics {
+        margin: 60px auto 35px auto;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .statistics {
+        margin: 15px auto 35px auto;
+        padding: 0 16px;
+    }
+}

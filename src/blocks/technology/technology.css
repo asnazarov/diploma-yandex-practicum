@@ -1,0 +1,5 @@
+@import url(./__container/technology__container.css);
+.technology {
+    box-sizing: border-box;
+    background-color: #F5F6F7;
+}

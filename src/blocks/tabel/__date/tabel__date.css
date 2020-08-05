@@ -1,0 +1,16 @@
+.tabel__date {
+    height: 24px;
+    margin: 0 0 56px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    .tabel__date {
+        margin: 0 0 24px 0;
+        line-height: 55px;
+    }
+}

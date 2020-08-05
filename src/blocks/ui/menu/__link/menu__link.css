@@ -1,0 +1,26 @@
+@import url(./_theme_dark/menu__link_theme_dark.css);
+@import url(./_theme_gray/menu__link_theme_gray.css);
+@import url(./_theme_light/menu__link_theme_light.css);
+.menu__link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 30px;
+    padding-bottom: 27px;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu__link {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu__link {
+        margin-left: 10px;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+}

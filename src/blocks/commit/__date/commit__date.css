@@ -1,0 +1,15 @@
+.commit__date {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .commit__date {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,91 @@
+.search__bar {
+    border-radius: 100px;
+    height: 64px;
+    width: 99%;
+    display: block;
+    border: 1px solid #D1D2D6;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.search__bar:focus {
+    outline: none;
+    border: 1.5px solid #403f3f;
+}
+
+@media screen and (max-width: 1020px) {
+    .search__bar {
+        height: 56px;
+        ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search__bar {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* WebKit, Edge */
+
+::-webkit-input-placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* Firefox 4-18 */
+
+:-moz-placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* Firefox 19+ */
+
+::-moz-placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* IE 10-11 */
+
+:-ms-input-placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* Edge */
+
+::-ms-input-placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* MODERN BROWSER */
+
+::placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}

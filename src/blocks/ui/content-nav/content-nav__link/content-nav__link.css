@@ -1,0 +1,27 @@
+@import url(./_hidden/content-nav__link_hidden.css);
+.content-nav__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.content-nav__link:hover {
+    color: #B6BCBF;
+}
+
+.content-nav__link::after {
+    content: url(../../../../images/arrow.svg);
+}
+
+.content-nav__link:hover::after {
+    content: url(../../../../images/arrow-gray.svg);
+}
+
+@media screen and (max-width: 600px) {
+    .content-nav__link {
+        margin-top: 14px;
+    }
+}

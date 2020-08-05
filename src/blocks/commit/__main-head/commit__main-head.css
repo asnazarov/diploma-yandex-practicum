@@ -1,0 +1,22 @@
+.commit__main-head {
+    padding: 0px 105px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+    .commit__main-head {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .commit__main-head {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .commit__main-head {
+        padding: 0px 16px;
+    }
+}

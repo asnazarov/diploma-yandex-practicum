@@ -1,0 +1,13 @@
+@import url(./_day/tabel__sorter_day.css);
+@import url(./_month/tabel__sorter_month.css);
+.tabel__sorter {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    text-transform: uppercase;
+    margin-right: 45px;
+}

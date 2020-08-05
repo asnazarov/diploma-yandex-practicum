@@ -1,0 +1,36 @@
+@import url(./__link/breadcrumbs__link.css);
+@import url(./__active/breadcrumbs__active.css);
+.breadcrumbs {
+    max-width: 1440px;
+    margin: 40px auto 80px auto;
+    padding: 0 105px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumbs>li:after {
+    content: '/';
+    font-weight: 900;
+    display: inline-block;
+    color: #B6BCBF;
+    width: 0.8em;
+    text-align: center;
+}
+
+.breadcrumbs>li:last-child:after {
+    content: '';
+}
+
+@media screen and (max-width: 1020px) {
+    .breadcrumbs {
+        margin: 33px auto 50px auto;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .breadcrumbs {
+        display: none;
+    }
+}

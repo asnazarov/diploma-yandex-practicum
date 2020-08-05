@@ -1,0 +1,14 @@
+@import url(./__container/tabel__container.css);
+@import url(./__date/tabel__date.css);
+@import url(./__dates/tabel__dates.css);
+@import url(./__day/tabel__day.css);
+@import url(./__item/tabel__item.css);
+@import url(./__items/tabel__items.css);
+@import url(./__rectange/tabel__rectange.css);
+@import url(./__scale/tabel__scale.css);
+@import url(./__scale-number/tabel__scale-number.css);
+@import url(./__sorter/tabel__sorter.css);
+@import url(./__title/tabel__title.css);
+.tabel {
+    background-color: #F5F6F7;
+}

@@ -1,0 +1,20 @@
+.content-title {
+    word-wrap: break-word;
+    font-family: 'Robotoslab', sans-serif;
+    color: #1A1B22;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    max-width: 715px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .content-title {
+        font-size: 30px;
+        line-height: 34px;
+        /* max-width: 460px; */
+        max-width: 415px;
+    }
+}

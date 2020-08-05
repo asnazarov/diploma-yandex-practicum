@@ -1,0 +1,19 @@
+.result__container {
+    position: relative;
+    max-width: 1440px;
+    margin: 5px auto 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1400px) {
+    .result__container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .result__container {
+        padding: 0;
+    }
+}

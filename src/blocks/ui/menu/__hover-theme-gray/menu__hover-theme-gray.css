@@ -1,0 +1,9 @@
+.menu__hover-theme-gray:hover {
+    color: #B6BCBF;
+    transition: .3s;
+}
+
+.menu__hover-theme-gray:not(:hover) {
+    color: #000;
+    transition: .4s;
+}

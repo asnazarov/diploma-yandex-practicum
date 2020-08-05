@@ -1,0 +1,15 @@
+.tabel__item {
+    width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+    .tabel__item {
+        margin: 0 0 0 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tabel__item {
+        margin: 0 0 0 5px;
+    }
+}

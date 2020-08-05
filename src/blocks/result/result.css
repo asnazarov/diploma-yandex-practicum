@@ -1,0 +1,17 @@
+@import url(./__container/result__container.css);
+.result {
+    background-color: #F5F6F7;
+    padding: 80px 100px;
+}
+
+@media screen and (max-width: 1080px) {
+    .result {
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .result {
+        padding: 30px 16px;
+    }
+}

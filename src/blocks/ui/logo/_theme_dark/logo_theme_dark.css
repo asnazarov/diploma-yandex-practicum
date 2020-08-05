@@ -1,0 +1,13 @@
+.logo_theme_dark {
+    color: #000;
+}
+
+.logo_theme_dark:hover {
+    color: #B6BCBF;
+    transition: .3s;
+}
+
+.logo_theme_dark:not(:hover) {
+    color: #000;
+    transition: .4s;
+}

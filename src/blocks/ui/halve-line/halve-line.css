@@ -1,0 +1,13 @@
+@import url(./_theme_light/halve-line_theme_light.css);
+@import url(./_theme_dark/halve-line_theme_dark.css);
+.halve-line {
+    border: transparent;
+    margin: 0;
+    height: 1px;
+}
+
+@media screen and (max-width: 1020px) {
+    .halve-line {
+        height: 0.1px;
+    }
+}

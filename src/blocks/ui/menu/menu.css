@@ -1,0 +1,18 @@
+@import url(./__link/menu__link.css);
+@import url(./__active-theme-light/menu__active-theme-light.css);
+@import url(./__active-theme-dark/menu__active-theme-dark.css);
+@import url(./__hover-theme-dark/menu__hover-theme-dark.css);
+@import url(./__hover-theme-gray/menu__hover-theme-gray.css);
+@import url(./__hover-theme-light/menu__hover-theme-light.css);
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin-left: -30px;
+    }
+}

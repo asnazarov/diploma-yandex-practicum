@@ -1,0 +1,17 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../vendor/libs/swiper/swiper-bundle.min.css);
+@import url(../blocks/ui/logo/logo.css);
+@import url(../blocks/ui/menu/menu.css);
+@import url(../blocks/ui/social-icons/social-icons.css);
+@import url(../blocks/ui/halve-line/halve-line.css);
+@import url(../blocks/ui/content-title/content-title.css);
+@import url(../blocks/ui/content-nav/content-nav.css);
+@import url(../blocks/ui/navigation/navigation.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/technology/technology.css);
+@import url(../blocks/author/author.css);
+@import url(../blocks/commit/commit.css);
+@import url(../blocks/swiper/swiper.css);
+@import url(../blocks/footer/footer.css);

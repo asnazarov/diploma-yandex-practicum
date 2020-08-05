@@ -1,0 +1,33 @@
+.author__items {
+    max-width: 55%;
+    margin-top: 138px;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .author__items {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .author__items {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .author__items {
+        margin-top: 15px;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .author__items {
+        margin-top: 15px;
+        padding: 0 16px;
+    }
+}
