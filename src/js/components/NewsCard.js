@@ -1,7 +1,8 @@
 // Класс карточки новости.
 export default class NewsCard {
-    constructor(urlToImage, publishedAt, title, description, name) {
+    constructor(wrapperLink, urlToImage, publishedAt, title, description, name) {
         this.template = document.querySelector('#cadr-template-new').content;
+        this.wrapperLink = wrapperLink;
         this.urlToImage = urlToImage;
         this.publishedAt = publishedAt;
         this.title = title;
@@ -11,6 +12,7 @@ export default class NewsCard {
 
     create() {
         this.view = this.template.cloneNode(true).children[0];
+        this.view.querySelector('.card__wrapper-link').href = this.wrapperLink;
         this.view.querySelector('.card__img').src = this.urlToImage;
         this.view.querySelector('.card__date').textContent = this.publishedAt;
         this.view.querySelector('.card__title').textContent = this.title;
