@@ -13,7 +13,8 @@ export default class NewsCard {
     create() {
         this.view = this.template.cloneNode(true).children[0];
         this.view.querySelector('.card__wrapper-link').href = this.wrapperLink;
-        this.view.querySelector('.card__img').src = this.urlToImage;
+        this.urlToImage ? this.view.querySelector('.card__img').src = this.urlToImage : this.view.querySelector('.card__img').style.display = "none"
+        this.view.querySelector('.card__img').alt = this.title;
         this.view.querySelector('.card__date').textContent = this.publishedAt;
         this.view.querySelector('.card__title').textContent = this.title;
         this.view.querySelector('.card__text').textContent = this.description;

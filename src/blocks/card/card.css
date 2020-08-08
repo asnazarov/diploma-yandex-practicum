@@ -9,4 +9,41 @@
     max-width: 100%;
     margin: 0 auto;
     border-radius: 10px;
+    height: 611px;
+}
+
+@media screen and (max-width: 1850px) {
+    .card {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .card {
+        height: 556px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .card {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: 490px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: auto;
+    }
 }
