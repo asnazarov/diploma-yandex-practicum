@@ -19,6 +19,8 @@ export default class NewsCardList {
         this.newsApi.getCardsNews()
             .then(res => {
                 res.articles.slice(this.children.length, 3 + this.children.length).forEach(item => this.addCard(item.url, item.urlToImage, item.publishedAt, item.title, item.description, item.source.name));
+
+                this.body.querySelector('.preloader').style.display = "none";
                 if (this.children.length === 0) {
                     this.body.querySelector('.result').style.display = "none";
                     this.body.querySelector('.notFound').style.display = "flex";
@@ -26,8 +28,8 @@ export default class NewsCardList {
                     this.body.querySelector('.notFound').style.display = "none";
                     this.body.querySelector('.result').style.display = "block";
                 }
-                // console.log(this.children.length)
             })
+            // console.log(res.articles)
     }
 
 }

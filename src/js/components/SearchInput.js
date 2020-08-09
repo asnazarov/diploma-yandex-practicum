@@ -7,20 +7,38 @@
 //  управляющие работой кнопки сабмита.
 
 export default class SearchInput {
-    constructor(body, newsCardList, container) {
+    constructor(body, newsCardList, container, newsApi) {
         this.body = body;
         this.newsCardList = newsCardList;
         this.container = container;
+        this.newsApi = newsApi;
+        // console.log(this.newsApi);
         this.children = this.container.children;
         this.body.querySelector('.search').addEventListener('submit', this.searchNewsSubmit);
         this.body.querySelector('.btnShowMore').addEventListener('click', this.showMore);
     }
+
     searchNewsSubmit = (event) => {
         event.preventDefault();
+        this.body.querySelector('.result').style.display = "none";
+        this.body.querySelector('.notFound').style.display = "none";
         this.container.innerHTML = "";
+        this.body.querySelector('.preloader').style.display = "flex";
         this.newsCardList.render();
+        // this.newsApi.getCardsNews()
+        //     .then(res => {
+        //         res.articles.forEach(item => console.log(item.length))
+
+        //     });
     }
     showMore = () => {
+        this.body.querySelector('.preloader').style.display = "flex";
         this.newsCardList.render()
+        if (this.newsApi.getCardsNews().then(res => res.articles.length) == this.children.length) {
+            console.log(123)
+        }
+        console.log(this.children.length);
+
+
     }
 }
