@@ -9,14 +9,15 @@
     max-width: 100%;
     margin: 0 auto;
     border-radius: 10px;
-    height: 611px;
+    min-height: 550px;
 }
 
-@media screen and (max-width: 1850px) {
+
+/* @media screen and (max-width: 1850px) {
     .card {
         height: 700px;
     }
-}
+} */
 
 @media screen and (max-width: 1050px) {
     .card {

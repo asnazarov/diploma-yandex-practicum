@@ -12,7 +12,6 @@ export default class SearchInput {
         this.newsCardList = newsCardList;
         this.container = container;
         this.newsApi = newsApi;
-        // console.log(this.newsApi);
         this.children = this.container.children;
         this.body.querySelector('.search').addEventListener('submit', this.searchNewsSubmit);
         this.body.querySelector('.btnShowMore').addEventListener('click', this.showMore);
@@ -25,20 +24,18 @@ export default class SearchInput {
         this.container.innerHTML = "";
         this.body.querySelector('.preloader').style.display = "flex";
         this.newsCardList.render();
-        // this.newsApi.getCardsNews()
-        //     .then(res => {
-        //         res.articles.forEach(item => console.log(item.length))
-
-        //     });
     }
     showMore = () => {
         this.body.querySelector('.preloader').style.display = "flex";
-        this.newsCardList.render()
-        if (this.newsApi.getCardsNews().then(res => res.articles.length) == this.children.length) {
-            console.log(123)
-        }
-        console.log(this.children.length);
-
+        // if (this.newsCardList.localA() == undefined) {
+        // this.newsCardList.render()
+        // }
+        this.newsCardList.localA()
+        this.body.querySelector('.preloader').style.display = "none";
+        // 
+        // this.newsCardList.render()
+        // console.log(this.children.length);
 
     }
+
 }
