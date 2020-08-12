@@ -8,18 +8,20 @@ export default class NewsCardList {
         this.newsApi = newsApi;
         this.children = this.container.children;
         this.localA();
+
     }
 
     addCard = (url, urlToImage, publishedAt, title, description, name) => {
         this.container.append(this.createNewsCard(url, urlToImage, publishedAt, title, description, name).create())
     }
 
-    render = (event) => {
+    render = (data) => {
         this.newsApi.getCardsNews()
             .then(res => {
                 res.articles.slice(this.children.length, 3 + this.children.length).forEach(item => this.addCard(item.url, item.urlToImage, item.publishedAt, item.title, item.description, item.source.name));
                 localStorage.setItem('data', JSON.stringify(res.articles));
-                const localRender = localStorage.getItem('data');
+                this.lengthItems = res.articles.length;
+                localStorage.getItem('data');
                 //    this.RenderParse = RenderParse;
                 this.body.querySelector('.preloader').style.display = "none";
                 if (this.children.length === 0) {
@@ -42,6 +44,7 @@ export default class NewsCardList {
             this.body.querySelector('.result').style.display = "block";
         }
     }
+
 }
 
 
