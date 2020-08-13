@@ -24,5 +24,5 @@ import NewsApi from './modules/NewsApi';
     const createNewsCard = (...arg) => new NewsCard(...arg);
     const newsCardList = new NewsCardList(body, container, createNewsCard, newsApi, searchInput);
 
-    const searchInput = new SearchInput(body, newsCardList, container, newsApi);
+    const searchInput = new SearchInput(body, newsCardList, container, newsApi, searchBar);
 })();

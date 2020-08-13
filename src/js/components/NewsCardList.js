@@ -20,6 +20,7 @@ export default class NewsCardList {
             .then(res => {
                 res.articles.slice(this.children.length, 3 + this.children.length).forEach(item => this.addCard(item.url, item.urlToImage, item.publishedAt, item.title, item.description, item.source.name));
                 localStorage.setItem('data', JSON.stringify(res.articles));
+                localStorage.setItem('totalResults', JSON.stringify(res.totalResults));
                 this.lengthItems = res.articles.length;
                 localStorage.getItem('data');
                 //    this.RenderParse = RenderParse;

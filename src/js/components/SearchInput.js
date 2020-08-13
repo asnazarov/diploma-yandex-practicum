@@ -7,11 +7,13 @@
 //  управляющие работой кнопки сабмита.
 
 export default class SearchInput {
-    constructor(body, newsCardList, container, newsApi) {
+    constructor(body, newsCardList, container, newsApi, searchBar) {
         this.body = body;
         this.newsCardList = newsCardList;
         this.container = container;
         this.newsApi = newsApi;
+        this.searchBar = searchBar;
+        console.log(this.searchBar)
         this.children = this.container.children;
         this.body.querySelector('.search').addEventListener('submit', this.searchNewsSubmit);
         this.body.querySelector('.btnShowMore').addEventListener('click', this.showMore);
@@ -24,6 +26,7 @@ export default class SearchInput {
         this.container.innerHTML = "";
         this.body.querySelector('.preloader').style.display = "flex";
         this.newsCardList.render();
+        localStorage.setItem('searchQuery', this.searchBar.value)
     }
     showMore = () => {
         this.body.querySelector('.preloader').style.display = "flex";
