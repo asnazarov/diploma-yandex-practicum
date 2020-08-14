@@ -11,3 +11,11 @@ for (let i = 0; i < statisticsMentioning.length; i++) {
     }
 }
 body.querySelector('.statistics__text_mentioning').textContent = sum;
+
+class Statistics {
+    constructor() {
+
+    }
+}
+
+const statistics = new Statistics();

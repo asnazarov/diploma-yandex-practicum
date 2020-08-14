@@ -11,14 +11,15 @@ import NewsApi from './modules/NewsApi';
     const body = document.querySelector('body');
     const container = body.querySelector('.cards-news');
     const searchBar = document.querySelector('.search__bar'); // инпут
-    const serverNewsUrl = 'https://praktikum.tk/news/v2/everything?';
+    // const serverNewsUrl = 'https://praktikum.tk/news/v2/everything?';
+    const serverNewsUrl = 'https://newsapi.org/v2/everything?';
     body.querySelector('.logo').addEventListener('click', () => localStorage.clear()) // чистим localStorage
     const newsApi = new NewsApi({
         baseUrl: serverNewsUrl,
-        headers: {
-            'apiKey': 'Bearer <b1bc6d643ef64acfb58aee73a2f93d5d>',
-            'Content-Type': 'application/json'
-        },
+        // headers: {
+        //     // 'apiKey': 'Bearer <b1bc6d643ef64acfb58aee73a2f93d5d>',
+        //     'Content-Type': 'application/json'
+        // },
     }, body);
 
     const createNewsCard = (...arg) => new NewsCard(...arg);
