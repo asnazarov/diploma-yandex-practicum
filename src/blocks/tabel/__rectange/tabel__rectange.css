@@ -1,7 +1,6 @@
 .tabel__rectange {
     height: 24px;
-    width: 47%;
-    margin: 0 0 56px 0;
+    margin: 10px 0;
     background-color: #2F71E5;
     padding-left: 6px;
     box-sizing: border-box;
@@ -14,9 +13,10 @@
     color: #fff;
 }
 
-.tabel__rectange:last-child {
+
+/* .tabel__rectange:last-child {
     margin: 0 0 16px 0;
-}
+} */
 
 @media screen and (max-width: 500px) {
     .tabel__rectange {

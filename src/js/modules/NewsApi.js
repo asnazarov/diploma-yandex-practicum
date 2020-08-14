@@ -12,7 +12,7 @@ export default class NewsApi {
 
     getCardsNews() {
             this.request = this.searchBar.value
-            return fetch(`${this.url}q=${this.request}&language=ru&apiKey=${this.apiKey}`, {
+            return fetch(`${this.url}q=${this.request}&pageSize=100&from=2020-08-01&language=ru&apiKey=${this.apiKey}`, {
                     method: "GET",
                     // headers: this.headers,
                 })

@@ -33,7 +33,8 @@
     <section class="statistics">
         <h2 class="content-title statistics__search">Вы спросили: <span class="statistics__result">"Путешествия"</span>
         </h2>
-        <p class="statistics__text">Новостей за неделю: <span class="statistics__text_number statistics__text_total">34 324</span></p>
+        <p class="statistics__text">Новостей за неделю: <span class="statistics__text_number statistics__text_total">34
+                324</span></p>
         <p class="statistics__text">Упоминаний в загаловках: <span class="statistics__text_number statistics__text_mentioning">235</span></p>
     </section>
     <section class="tabel">
@@ -45,43 +46,36 @@
                 <p class="tabel__sorter">Кол-во упоминаний</p>
             </div>
             <hr class="halve-line halve-line_theme_dark" />
+            <ul class="tabel__scale">
+                <li class="tabel__scale-number">0</li>
+                <li class="tabel__scale-number">25</li>
+                <li class="tabel__scale-number">50</li>
+                <li class="tabel__scale-number">75</li>
+                <li class="tabel__scale-number">100</li>
+            </ul>
 
-            <div class="tabel__items">
-                <div class="tabel__dates">
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                    <p class="tabel__date">19, <span class="tabel__day">пн</span></p>
-                </div>
-                <div class="tabel__item">
-                    <ul class="tabel__scale">
-                        <li class="tabel__scale-number">0</li>
-                        <li class="tabel__scale-number">25</li>
-                        <li class="tabel__scale-number">50</li>
-                        <li class="tabel__scale-number">75</li>
-                        <li class="tabel__scale-number">100</li>
-                    </ul>
-                    <div>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
-                        <p class="tabel__rectange">47</p>
+            <div class="tabel__schedule-wrapper">
+                <template id="tabel-schedule">
+                    <div class="tabel__item">
+                        <div class="tabel__dates">
+                            <!-- <p class="tabel__date">19, <span class="tabel__day">пн</span></p> -->
+                            <p class="tabel__date">19,   </p>
+                        </div>
+                        <div class="tabel__schedule">
+                            <p class="tabel__rectange">47</p>
+                        </div>
                     </div>
-                    <ul class="tabel__scale">
-                        <li class="tabel__scale-number">0</li>
-                        <li class="tabel__scale-number">25</li>
-                        <li class="tabel__scale-number">50</li>
-                        <li class="tabel__scale-number">75</li>
-                        <li class="tabel__scale-number">100</li>
-                    </ul>
-                </div>
+                    
+                </template>
             </div>
+
+            <ul class="tabel__scale">
+                <li class="tabel__scale-number">0</li>
+                <li class="tabel__scale-number">25</li>
+                <li class="tabel__scale-number">50</li>
+                <li class="tabel__scale-number">75</li>
+                <li class="tabel__scale-number">100</li>
+            </ul>
         </div>
     </section>
     <footer class="footer">

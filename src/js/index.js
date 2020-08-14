@@ -12,7 +12,8 @@ import NewsApi from './modules/NewsApi';
     const container = body.querySelector('.cards-news');
     const searchBar = document.querySelector('.search__bar'); // инпут
     // const serverNewsUrl = 'https://praktikum.tk/news/v2/everything?';
-    const serverNewsUrl = 'https://newsapi.org/v2/everything?';
+    // const serverNewsUrl = 'https://newsapi.org/v2/everything?';
+    const serverNewsUrl = 'https://nomoreparties.co/news/v2/everything?';
     body.querySelector('.logo').addEventListener('click', () => localStorage.clear()) // чистим localStorage
     const newsApi = new NewsApi({
         baseUrl: serverNewsUrl,
