@@ -26,8 +26,6 @@ export default class Statistics {
     }
     checkArray = (arr) => {
         const searchValue = localStorage.getItem('searchQuery').toLocaleLowerCase();
-        const statisticsTextTotal = localStorage.getItem('totalResults');
-        const statisticsMentioning = localStorage.getItem('data').toLocaleLowerCase().split(' ');
         let ar = []
         arr.forEach(item => {
             ar.push(item.title);
@@ -40,8 +38,8 @@ export default class Statistics {
                 this.sum += 1;
             } else {
                 this.container.querySelector('.tabel__rectange').textContent = 0
+                this.container.querySelector('.tabel__rectange').style.width = "0%"
             }
-
         }
         return this.sum
     }
@@ -58,7 +56,6 @@ export default class Statistics {
             this.start += 1;
             this.textRectange = this.count(this.localParse, this.week);
             this.addCard(this.textRectange)
-            console.log(this.textRectange)
         }
     }
 

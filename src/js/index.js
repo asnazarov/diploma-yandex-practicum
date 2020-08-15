@@ -1,11 +1,9 @@
 import "../pages/index.css";
 
-
 import NewsCard from './components/NewsCard';
 import NewsCardList from './components/NewsCardList';
 import SearchInput from './components/SearchInput';
 import NewsApi from './modules/NewsApi';
-
 
 (function() {
     const body = document.querySelector('body');
@@ -17,14 +15,12 @@ import NewsApi from './modules/NewsApi';
     body.querySelector('.logo').addEventListener('click', () => localStorage.clear()) // чистим localStorage
     const newsApi = new NewsApi({
         baseUrl: serverNewsUrl,
-        // headers: {
-        //     // 'apiKey': 'Bearer <b1bc6d643ef64acfb58aee73a2f93d5d>',
-        //     'Content-Type': 'application/json'
-        // },
+        headers: {
+            'Content-Type': 'application/json'
+        },
     }, body);
 
     const createNewsCard = (...arg) => new NewsCard(...arg);
     const newsCardList = new NewsCardList(body, container, createNewsCard, newsApi, searchInput);
-
     const searchInput = new SearchInput(body, newsCardList, container, newsApi, searchBar);
 })();

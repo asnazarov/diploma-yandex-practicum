@@ -1,6 +1,7 @@
 .tabel__rectange {
     height: 24px;
     margin: 10px 0;
+    min-width: 2%;
     background-color: #2F71E5;
     padding-left: 6px;
     box-sizing: border-box;

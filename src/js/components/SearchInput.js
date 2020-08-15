@@ -13,7 +13,6 @@ export default class SearchInput {
         this.container = container;
         this.newsApi = newsApi;
         this.searchBar = searchBar;
-        console.log(this.searchBar)
         this.children = this.container.children;
         this.body.querySelector('.search').addEventListener('submit', this.searchNewsSubmit);
         this.body.querySelector('.btnShowMore').addEventListener('click', this.showMore);
@@ -30,15 +29,8 @@ export default class SearchInput {
     }
     showMore = () => {
         this.body.querySelector('.preloader').style.display = "flex";
-        // if (this.newsCardList.localA() == undefined) {
-        // this.newsCardList.render()
-        // }
         this.newsCardList.localA()
         this.body.querySelector('.preloader').style.display = "none";
-        // 
-        // this.newsCardList.render()
-        // console.log(this.children.length);
-
     }
 
 }
