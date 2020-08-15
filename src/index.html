@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head>
 <!-- Yandex.Metrika counter -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     (function(m, e, t, r, i, k, a) {
         m[i] = m[i] || function() {
             (m[i].a = m[i].a || []).push(arguments)
         };
         m[i].l = 1 * new Date();
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+            k, a)
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
@@ -30,7 +31,9 @@
         webvisor: true
     });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/66139033" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/66139033" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
 <body>
@@ -50,7 +53,7 @@
             <h1 class="cover__title">Что в мире творится?</h1>
             <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
             <form class="search">
-                <input class="search__bar" type="text" placeholder="Введите тему новости">
+                <input class="search__bar" required type="text" placeholder="Введите тему новости">
                 <button class="search__btn" type="submit">Искать</button>
             </form>
         </section>
@@ -71,36 +74,6 @@
                 <a class="content-nav__link" href="./analytics.html">Посмотреть аналитику </a>
             </div>
             <div class="cards-news">
-                <div class="card">
-                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="Национальное достояние – парки">
-                    <p class="card__date">19 августа, 2019</p>
-                    <h2 class="card__title">Национальное достояние – парки</h2>
-                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                    <p class="card__source">Лента.ру</p>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="Национальное достояние – парки">
-                    <p class="card__date">19 августа, 2019</p>
-                    <h2 class="card__title">Национальное достояние – парки</h2>
-                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                    <p class="card__source">Лента.ру</p>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="<%=require('./images/cards/image_04.jpg')%>" alt="Лесные огоньки: история одной фотографии">
-                    <p class="card__date">19 августа, 2019</p>
-                    <h2 class="card__title">Лесные огоньки: история одной фотографии</h2>
-                    <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы. Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
-                        ускользающую красоту одного из местных чудес природы.</p>
-                    <p class="card__source">Лента.ру</p>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
-                    <p class="card__date">19 августа, 2019</p>
-                    <h2 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                    <p class="card__source">Лента.ру</p>
-                </div>
-
             </div>
             <button class="btnShowMore">Показать еще</button>
         </div>
@@ -109,8 +82,8 @@
         <img class="author__foto" src="<%=require('./images/my-foto.jpeg')%>" alt="Фото автора">
         <div class="author__items">
             <h2 class="content-title">Об авторе</h2>
-            <p class="author__text">Меня зовут Александр Назаров. Я начинающий Frontend-разработчик. Владею на хорошем уровне технологиями разработки: JavaScript ES6, ООП, HTML5, БЭМ, Grid, CSS, SCSS, Git, API, Webpack, Gulp, Photoshop, Figma, адаптивная и кроссбраузерная верстка
-                с валидным кодом. В настоящее время изучаю Vue.js и буду развиваться в этом направлении.</p>
+            <p class="author__text">Меня зовут Александр Назаров. Я начинающий Frontend-разработчик. Владею на хорошем уровне технологиями: JavaScript ES6, ООП, HTML5, БЭМ, Grid, CSS, SCSS, Git, API, Webpack, Gulp, Photoshop, Figma, адаптивная и кроссбраузерная верстка с валидным
+                кодом. В настоящее время изучаю Vue.js и буду развиваться в этом направлении.</p>
             <p class="author__text">Данный проект является дипломной работой по окончании обучения курса <span><a
                         class="navigation" href="https://praktikum.yandex.ru/web">Яндекс.Практикума</a></span> и был написан в августе 2020 г. В результате обучения было выполнено три учебных (<span><a class="navigation"
                         href="https://hakim.se/404">временно не работает</a></span>, <span><a class="navigation"
@@ -132,7 +105,7 @@
                 </li>
                 <li><a class="menu__link footer__link menu__link_theme_dark menu__hover-theme-gray" href="./about.html">О проекте</a>
                 </li>
-                <li><a class="menu__link footer__link menu__link_theme_dark menu__hover-theme-gray" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
+                <li><a class="menu__link footer__link menu__link_theme_dark menu__hover-theme-gray" href="https://praktikum.yandex.ru/web" target="_blank">Яндекс.Практикум</a></li>
             </ul>
         </nav>
         <nav>
@@ -147,7 +120,25 @@
             </ul>
         </nav>
     </footer>
-
+    <template id="cadr-template-new">
+        <div>
+            <a class="card__wrapper-link" target="_blank" href="https://www.google.ru/">
+                <div class="card">
+                    <img class="card__img" src="<%=require('./images/cards/image_08.jpg')%>"
+                        alt="Национальное достояние – парки">
+                    <p class="card__date">19 августа, 2019</p>
+                    <h2 class="card__title">Национальное достояние – парки</h2>
+                    <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                        начала
+                        складываться система национальных парков – охраняемых территорий, где и сегодня
+                        каждый
+                        может
+                        приобщиться к природе.</p>
+                    <p class="card__source">Лента.ру</p>
+                </div>
+            </a>
+        </div>
+    </template>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 

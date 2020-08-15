@@ -9,6 +9,7 @@
 @import url(./__text/commit__text.css);
 @import url(./__title/commit__title.css);
 @import url(./__main-head/commit__main-head.css);
+@import url(./__wrapper-link/commit__wrapper-link.css);
 .commit {
     margin: 0 auto;
     box-sizing: border-box;
