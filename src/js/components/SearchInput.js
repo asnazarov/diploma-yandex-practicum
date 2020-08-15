@@ -20,8 +20,10 @@ export default class SearchInput {
 
     searchNewsSubmit = (event) => {
         event.preventDefault();
+        this.body.querySelector('.search__btn').disabled = true;
         this.body.querySelector('.result').style.display = "none";
         this.body.querySelector('.notFound').style.display = "none";
+        localStorage.removeItem('searchQuery') // удаляю текст запроса из хранилища
         this.container.innerHTML = "";
         this.body.querySelector('.preloader').style.display = "flex";
         this.newsCardList.render();
@@ -29,7 +31,7 @@ export default class SearchInput {
     }
     showMore = () => {
         this.body.querySelector('.preloader').style.display = "flex";
-        this.newsCardList.localA()
+        this.newsCardList.renderLocalStorage()
         this.body.querySelector('.preloader').style.display = "none";
     }
 

@@ -16,21 +16,12 @@ for (let i = 0; i < statisticsMentioning.length; i++) {
 }
 body.querySelector('.statistics__text_mentioning').textContent = sum;
 
-
-
-const statistics = new Statistics(container, localParse, todayMonth, statisticsResult, statisticsMentioning);
-let date = new Date();
-
-// const херня = `${date.getDate() + 1} ${date.getMonth()} ${date.getFullYear()} `;
-// console.log(херня)
-
-
-// getWeekDay(date) // сегодняшний день недели
-// console.log(getWeekDay(date))
+const statistics = new Statistics(container, localParse, statisticsResult, statisticsMentioning);
+const date = new Date();
 
 function getMonth(month) {
-    let days = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-    return days[month.getMonth()];
+    const days = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    return days[month.getMonth()].toUpperCase();
 }
-
 const todayMonth = getMonth(date) // месяц сегодня
+body.querySelector('.tabel__sorter_month').textContent = getMonth(date);

@@ -29,6 +29,10 @@
     background: #2A65CC;
 }
 
+.search__btn:disabled {
+    background: #b0b1af;
+}
+
 @media screen and (max-width: 500px) {
     .search__btn {
         position: inherit;
