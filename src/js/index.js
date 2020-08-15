@@ -23,7 +23,7 @@ import NewsApi from './modules/NewsApi';
         headers: {
             'Content-Type': 'application/json'
         },
-    }, body, utils);
+    }, body);
 
     const createNewsCard = (...arg) => new NewsCard(...arg);
     const newsCardList = new NewsCardList(body, container, createNewsCard, newsApi, btnShowMore);
