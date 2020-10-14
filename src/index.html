@@ -50,12 +50,21 @@
         </header>
         <hr class="halve-line halve-line_theme_light" />
         <section class="cover">
-            <h1 class="cover__title">Что в мире творится?</h1>
-            <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-            <form class="search">
-                <input class="search__bar" required type="text" placeholder="Введите тему новости">
-                <button class="search__btn" type="submit">Искать</button>
-            </form>
+            <div class="weatherWrapper" style="color: white;">
+
+            </div>
+
+            <div class="description">
+                <h1 class="description__title">Что в мире творится?</h1>
+                <p class="description__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+                <form class="search">
+                    <input class="search__bar" required type="text" placeholder="Введите тему новости">
+                    <button class="search__btn" type="submit">Искать</button>
+                </form>
+            </div>
+            <div class="time">
+                <!-- здесь будет время -->
+            </div>
         </section>
     </div>
     <div class="notFound">
@@ -120,6 +129,16 @@
             </ul>
         </nav>
     </footer>
+    <template id="cadr-template-weather">
+        <div class="weather">
+            <img class="weather__icon" src="<%=require('./images/weather/029-sun-7.svg')%>" alt="">
+            <p class="weather__city">Питер</p>
+            <p class="weather__temperature">10 C</p>
+            <p class="weather__text"></p>
+            <p class="weather__day">пятница</p>
+            <p class="weather__date">10/10/2020</p>
+        </div>
+    </template>
     <template id="cadr-template-new">
         <div>
             <a class="card__wrapper-link" target="_blank" href="https://www.google.ru/">

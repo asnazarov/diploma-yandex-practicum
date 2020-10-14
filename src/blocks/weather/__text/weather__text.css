@@ -1,0 +1,8 @@
+.weather__text {
+    font-family: 'Sourcesanpro', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}

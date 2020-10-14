@@ -7,7 +7,7 @@ export default class NewsApi {
         this.request = null;
         this.searchBar = options.searchBar; // инпут
         this.body = body;
-        console.log(this.fromDate())
+        // console.log(this.fromDate())
     }
 
     getCardsNews() {
@@ -31,6 +31,4 @@ export default class NewsApi {
         const from = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()-7}`
         return from
     }
-
-
 }

@@ -1,0 +1,8 @@
+.weather__day {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0;
+}

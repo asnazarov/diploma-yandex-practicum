@@ -1,9 +1,10 @@
 import "../pages/index.css";
-
 import NewsCard from './components/NewsCard';
 import NewsCardList from './components/NewsCardList';
 import SearchInput from './components/SearchInput';
 import NewsApi from './modules/NewsApi';
+import OpenweathermapApi from './modules/OpenweathermapApi.js';
+import Weather from './components/Weather.js';
 
 (function() {
     const body = document.querySelector('body');
@@ -12,20 +13,33 @@ import NewsApi from './modules/NewsApi';
     const searchBar = document.querySelector('.search__bar'); // инпут
     searchBar.value = localStorage.getItem('searchQuery')
         // const serverNewsUrl = 'https://newsapi.org/v2/everything?';
+        // const serverOpenweathermapApi = 'api.openweathermap.org/data/2.5/weather?q=London&appid=7a413b7114bca1a02d11e7114704e04e';
+    const serverOpenweathermapApi = NODE_ENV === 'development' ?
+        'http://api.weatherstack.com' : 'https://api.weatherstack.com';
     const serverNewsUrl = 'https://nomoreparties.co/news/v2/everything?';
-    const apiKey = 'b1bc6d643ef64acfb58aee73a2f93d5d';
+    const apiKeyNews = 'b1bc6d643ef64acfb58aee73a2f93d5d';
     body.querySelector('.logo').addEventListener('click', () => localStorage.clear()) // полностью чистим localStorage
+
+    const openweathermapApi = new OpenweathermapApi({
+        baseUrl: serverOpenweathermapApi,
+        weather: weather,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
 
     const newsApi = new NewsApi({
         baseUrl: serverNewsUrl,
-        key: apiKey,
         searchBar: searchBar,
+        key: apiKeyNews,
         headers: {
             'Content-Type': 'application/json'
         },
     }, body);
-
     const createNewsCard = (...arg) => new NewsCard(...arg);
     const newsCardList = new NewsCardList(body, container, createNewsCard, newsApi, btnShowMore);
+    const weather = new Weather(openweathermapApi);
     const searchInput = new SearchInput(body, newsCardList, container, newsApi, searchBar);
+
+
 })();

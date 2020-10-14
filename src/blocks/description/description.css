@@ -1,0 +1,5 @@
+@import './__text/description__text.css';
+@import './__title/description__title.css';
+.description {
+    max-width: 610px;
+}

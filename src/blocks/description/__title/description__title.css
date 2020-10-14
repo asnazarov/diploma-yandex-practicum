@@ -1,16 +1,16 @@
-.cover__title {
+.description__title {
     font-family: 'Robotoslab', sans-serif;
     color: #fff;
     font-weight: normal;
     font-size: 60px;
     line-height: 64px;
-    margin: 0;
+    margin: 0 0 50px 0;
     margin-top: 0px;
     max-width: 500px;
 }
 
 @media screen and (max-width: 1023px) {
-    .cover__title {
+    .description__title {
         font-size: 36px;
         line-height: 40px;
         max-width: 385px;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .cover__title {
+    .description__title {
         margin-bottom: 20px;
         margin-top: 30px;
     }

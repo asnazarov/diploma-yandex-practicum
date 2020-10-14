@@ -1,0 +1,9 @@
+.weather__city {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.3;
+    padding-top: 15px;
+    color: #fff;
+    margin: 0;
+}
