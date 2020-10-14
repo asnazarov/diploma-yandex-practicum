@@ -6,15 +6,24 @@
 @import './__day/weather__day.css';
 @import './__date/weather__date.css';
 .weatherWrapper {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.3;
+    max-width: 200px;
+    color: #ffffff;
     /* border: 1px solid rgb(255, 255, 255); */
+}
+
+@media screen and (max-width: 1250px) {
+    .weatherWrapper {
+        font-size: 22px;
+        max-width: 600px;
+        margin: 20px 0 20px 0;
+    }
 }
 
 @media screen and (max-width: 1023px) {
     .weatherWrapper {
-        font-size: 24px;
-        margin: 20px 0 20px 0;
+        font-size: 18px;
     }
 }
 
