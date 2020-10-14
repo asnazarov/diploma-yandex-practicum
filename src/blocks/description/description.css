@@ -2,4 +2,5 @@
 @import './__title/description__title.css';
 .description {
     max-width: 610px;
+    margin: 0 auto;
 }

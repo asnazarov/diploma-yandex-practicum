@@ -132,11 +132,15 @@
     <template id="cadr-template-weather">
         <div class="weather">
             <img class="weather__icon" src="<%=require('./images/weather/029-sun-7.svg')%>" alt="">
-            <p class="weather__city">Питер</p>
+            <div class="weather__item">
+                <p class="weather__city">Питер</p>
+                <p class="weather__text">пасмурно</p>
+            </div>
             <p class="weather__temperature">10 C</p>
-            <p class="weather__text"></p>
-            <p class="weather__day">пятница</p>
-            <p class="weather__date">10/10/2020</p>
+            <div class="weather__item">
+                <p class="weather__day">пятница</p>
+                <p class="weather__date">10/10/2020</p>
+            </div>
         </div>
     </template>
     <template id="cadr-template-new">

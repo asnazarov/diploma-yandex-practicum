@@ -6,3 +6,15 @@
     color: #fff;
     margin: 0;
 }
+
+@media screen and (max-width: 550px) {
+    .weather__date {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .weather__date {
+        display: none;
+    }
+}

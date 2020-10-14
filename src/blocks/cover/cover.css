@@ -11,10 +11,15 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1250px) {
+    .cover {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .cover {
-        max-width: 445px;
-        min-height: 320px;
+        padding: 0 42px;
     }
 }
 

@@ -3,3 +3,17 @@
     width: 112px;
     height: 112px;
 }
+
+@media screen and (max-width: 1250px) {
+    .weather__icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .weather__icon {
+        width: 45px;
+        height: 45px;
+    }
+}

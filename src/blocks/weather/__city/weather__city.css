@@ -7,3 +7,15 @@
     color: #fff;
     margin: 0;
 }
+
+@media screen and (max-width: 1023px) {
+    .weather__city {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .weather__city {
+        font-size: 16px;
+    }
+}
