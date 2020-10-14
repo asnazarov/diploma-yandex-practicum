@@ -1,0 +1,11 @@
+@import './__title/exchangeRates__title.css';
+@import './__info/exchangeRates__info.css';
+@import './__wrapperNum/exchangeRates__wrapperNum.css';
+@import './__dataText/exchangeRates__dataText.css';
+@import './__dataNumber/exchangeRates__dataNumber.css';
+.exchangeRates {
+    padding: 5px;
+    border: 2px solid rgb(193 186 186 / 51%);
+    border-radius: 4px;
+    color: #ffffff;
+}

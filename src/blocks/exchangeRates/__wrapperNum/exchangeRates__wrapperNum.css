@@ -1,0 +1,6 @@
+.exchangeRates__wrapperNum {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red;
+    min-height: 100px; */
+}
