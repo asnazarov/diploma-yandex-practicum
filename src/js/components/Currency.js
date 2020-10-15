@@ -5,7 +5,6 @@ export default class Currency {
         this.template = document.querySelector('#cadr-template-currency').content
         this.container = document.querySelector('.cover__item');
         this.currencyApi = currencyApi
-        console.log(this.template)
         this.addCard()
     }
 
@@ -23,10 +22,8 @@ export default class Currency {
             .then(res => {
                 const eur = Math.floor(res.rates.RUB * 100) / 100;
                 const usd = Math.floor((res.rates.RUB / res.rates.USD) * 100) / 100;
-                console.log(usd)
-                this.container.append(this.create({ eur, usd }))
-                console.log(res.rates)
+                this.container.prepend(this.create({ eur, usd }))
+                console.log(res)
             })
-
     }
 }

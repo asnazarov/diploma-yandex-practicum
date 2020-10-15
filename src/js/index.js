@@ -1,4 +1,5 @@
 import "../pages/index.css";
+import { times } from './utils/times.js';
 import NewsCard from './components/NewsCard';
 import NewsCardList from './components/NewsCardList';
 import SearchInput from './components/SearchInput';

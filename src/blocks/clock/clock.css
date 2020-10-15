@@ -1,0 +1,18 @@
+.clock {
+    font-family: 'Sourcesanpro', sans-serif;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 1.3;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    /* border: 2px solid rgb(193 186 186 / 51%); */
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .clock {
+        font-size: 24px;
+    }
+}
